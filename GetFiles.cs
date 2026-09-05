@@ -1,0 +1,18 @@
+﻿namespace SHARP
+{
+    public class GetFiles
+    {
+      public class Folders : IFolders
+      {
+        public string Source { get; private set; }
+
+        public string Target { get; private set; }
+
+        public Folders(string source, string target)
+        {
+          this.Source = source;
+          this.Target = target;
+        }
+      }
+    }
+}

